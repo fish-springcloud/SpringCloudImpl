@@ -29,3 +29,5 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     hostname: localhost
+    instance-id: 部门服务提供者8001 # 将会覆盖默认名称，显示在注册列表
+    prefer-ip-address: true # 显示ip而不是localhost
