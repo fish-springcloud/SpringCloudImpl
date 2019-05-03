@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commons" />
+        <module name="consumerdept80" />
+        <module name="eureka7001" />
+        <module name="providerdept8001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="10">
+      <module name="cloud" target="1.8" />
+      <module name="commons" target="1.8" />
+      <module name="consumerdept80" target="1.8" />
+      <module name="eureka7001" target="1.8" />
+      <module name="providerdept8001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="consumerdept80" options="-parameters" />
+      <module name="eureka7001" options="-parameters" />
+      <module name="providerdept8001" options="-parameters" />
+    </option>
+  </component>
+</project>
