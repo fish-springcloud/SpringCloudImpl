@@ -1,0 +1,33 @@
+server:
+  port: 8003
+mybatis:
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml # mapper文件位置
+  config-location: classpath:mybatis/mybatis.cfg.xml  # 配置文件的位置
+  type-aliases-package: com.github.fish56.cloud.entity # 实体类的位置
+spring:
+  application:
+    name: cloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloudDB03
+    username: root
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
+      max-wait-millis: 200
+
+# 其他不变，添加下面的配置，将服务注册到Eureka
+#
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    hostname: localhost
+    instance-id: 部门服务提供者8003 # 将会覆盖默认名称，显示在注册列表
+    prefer-ip-address: true # 显示ip而不是localhost
