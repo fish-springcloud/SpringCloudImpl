@@ -12,6 +12,7 @@
         <module>provider-dept-8002</module>
         <module>provider-dept-8003</module>
         <module>consumer-dept-8081-feign</module>
+        <module>provider-dept-hystrix-8004</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
