@@ -11,6 +11,7 @@
         <module>eureka-7003</module>
         <module>provider-dept-8002</module>
         <module>provider-dept-8003</module>
+        <module>consumer-dept-8081-feign</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -35,6 +36,14 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.56</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-feign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
