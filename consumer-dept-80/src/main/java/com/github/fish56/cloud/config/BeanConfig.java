@@ -16,9 +16,9 @@ public class BeanConfig {
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
-    @Bean
-    public IRule myRule(){
-        // 覆盖默认负载均衡算法
-        return new RetryRule();
-    }
+//    @Bean
+//    public IRule myRule(){
+//        // 覆盖默认负载均衡算法
+//        return new RetryRule();
+//    }
 }
